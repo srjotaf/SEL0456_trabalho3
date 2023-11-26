@@ -46,6 +46,6 @@ senha2.logar()
 
 
 def test():
-    assert (senha1.logar())
+    assert (senha1.logar()==False)
 
-    assert (senha2.logar())  
+    assert (senha2.logar()==True)  
