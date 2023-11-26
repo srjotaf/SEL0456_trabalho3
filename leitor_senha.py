@@ -5,7 +5,7 @@ class senha:
         self.valor = valor_digitado
 
     def __repr__(self) -> str:
-        return f'A senha digitada é: {self.valor}'
+        return f'A senha digitada é : {self.valor}'
     
     def logar(self) -> str:
         f = open("hash_armazenado.txt", "r")
