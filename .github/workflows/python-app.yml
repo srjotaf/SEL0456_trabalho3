@@ -1,13 +1,13 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Teste Branch1
+name: Teste Branch2
 
 on:
   push:
-    branches: [ "branch1" ]
+    branches: [ "branch2" ]
   pull_request:
-    branches: [ "branch1" ]
+    branches: [ "branch2" ]
 
 permissions:
   contents: read
@@ -36,5 +36,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
+        pytest leitor_senha.py
         
