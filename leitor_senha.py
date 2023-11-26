@@ -33,7 +33,7 @@ temp = f.readline()
 f.close()
 
 senha1 = senha(temp)
-print(senha1)
+# print(senha1)
 senha1.logar()
 
 f = open("senha_correta.txt", "r")
@@ -41,7 +41,7 @@ temp = f.readline()
 f.close()
 
 senha2 = senha(temp)
-print(senha2)
+# print(senha2)
 senha2.logar()
 
 
