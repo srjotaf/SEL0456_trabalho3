@@ -3,6 +3,7 @@ import hashlib
 class senha:
     def __init__(self,valor_digitado) -> None:
         self.valor = valor_digitado
+        self.correta = False
 
     def __repr__(self) -> str:
         return f'A senha digitada é : {self.valor}'
@@ -16,6 +17,7 @@ class senha:
 
         if (hash == hash_da_senha_digitada): 
             print('Senha correta')
+            self.correta = True
         
         else:
             print('Senha incorreta')
