@@ -19,9 +19,12 @@ class senha:
         if (hash == hash_da_senha_digitada): 
             # print('Senha correta')
             self.correta = True
+            return self.correta
+
         
         else:
             # print('Senha incorreta')
+            return self.correta
             pass
 
 
@@ -41,3 +44,8 @@ senha2 = senha(temp)
 print(senha2)
 senha2.logar()
 
+
+def test():
+    assert (senha1.logar())
+
+    assert (senha2.logar())  
