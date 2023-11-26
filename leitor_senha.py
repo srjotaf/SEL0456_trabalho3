@@ -5,10 +5,11 @@ class senha:
         self.valor = valor_digitado
         self.correta = False
 
-    def __repr__(self) -> str:
-        return f'A senha digitada é : {self.valor}'
-    
-    def logar(self) -> str:
+    def __repr__(self):
+        # return f'A senha digitada é : {self.valor}'
+        pass
+
+    def logar(self) -> None:
         f = open("hash_armazenado.txt", "r")
         hash=f.readline()
         f.close()
@@ -16,11 +17,12 @@ class senha:
         hash_da_senha_digitada = hashlib.sha256(self.valor.encode()).hexdigest()
 
         if (hash == hash_da_senha_digitada): 
-            print('Senha correta')
+            # print('Senha correta')
             self.correta = True
         
         else:
-            print('Senha incorreta')
+            # print('Senha incorreta')
+            pass
 
 
 f = open("senha_errada.txt", "r")
