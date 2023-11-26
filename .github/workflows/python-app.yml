@@ -36,4 +36,6 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with python
       run: |
+        python criar_hash.py
         python leitor_senha.py
+        
